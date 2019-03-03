@@ -10,6 +10,7 @@ const mongoose = require('mongoose');
 // const Celebrity = require('./models/celebrity.js');
 
 const indexRouter = require('./routes/index');
+const celebritiesRouter = require('./routes/celebrities');
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/celebrities', celebritiesRouter);
 
 // -- 404 and error handler
 
