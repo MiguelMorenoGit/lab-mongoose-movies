@@ -6,6 +6,9 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
+// const data = require('./bin/seeds.js');
+// const Celebrity = require('./models/celebrity.js');
+
 const indexRouter = require('./routes/index');
 
 const app = express();
